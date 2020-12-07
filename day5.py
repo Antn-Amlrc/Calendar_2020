@@ -36,7 +36,7 @@ def get_column_number(col):
 max = 0
 seats_ids = []
 for line in lines:
-    row, col = get_row_number(line[:7]), get_column_number(line[-3:])
+    row, col = get_row_number(line[:7]), get_column_number(line[-4:])
     id_seat = get_seat_ID(row, col)
     seats_ids.append(id_seat)
     if id_seat>max:
