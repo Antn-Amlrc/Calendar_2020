@@ -66,7 +66,7 @@ def count_leaves(branch):  # Recursive func
             number_of_possibility += leaves[n]
         if not(branch in leaves.keys()):
             leaves[branch] = number_of_possibility
-        print("Leave succeed", branch, "in", number_of_possibility)
+        print("Leaf succeed", branch, "in", number_of_possibility)
 
 print("We want each possible branch from", final_adapter)
 count_leaves(final_adapter)
